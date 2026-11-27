@@ -13,7 +13,7 @@ if ($PythonCmd -ne "") {
     $run = '"' + $PythonCmd + '" "%~dp0app\server.py"'
   }
   $bat = "@echo off`r`ncd /d `"%~dp0`"`r`n" + $run + "`r`n"
-  Set-Content -LiteralPath (Join-Path $Dest "kjor.bat") -Value $bat -Encoding Ascii
+  Set-Content -LiteralPath (Join-Path $Dest "kjor.bat") -Value $bat -Encoding Default
 }
 
 $shell = New-Object -ComObject WScript.Shell
