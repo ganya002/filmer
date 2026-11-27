@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mine-token" content="{{TOKEN}}">
+  <title>Mine filmer</title>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/">
+      <img src="/icon.png" width="44" height="44" alt="">
+      <span>Mine filmer</span>
+    </a>
+    <label class="search">
+      <span class="sr">Søk</span>
+      <input id="q" type="search" placeholder="Søk etter film eller serie" autocomplete="off" enterkeyhint="search">
+    </label>
+    <button type="button" class="btn" id="scan">Skann på nytt</button>
+    <button type="button" class="btn ghost" id="settings">Innstillinger</button>
+  </header>
+  <div id="banner" class="banner" hidden></div>
+  <nav id="filters" class="filters" aria-label="Filter"></nav>
+  <main id="view" tabindex="-1"></main>
+  <div id="menu" class="menu" hidden role="menu"></div>
+  <div id="dialog" class="dialog-back" hidden></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script>
+    if (!window.fetch) {
+      document.body.textContent = "Åpne Mine filmer i Microsoft Edge eller Chrome.";
+    }
+  </script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "project": "Mine filmer",
+  "summary": "Local Norwegian movie/series library for an old Windows 10 laptop. Netflix-like, lightweight, opens VLC, remembers playback position, categories, posters, recycle bin, desktop shortcut.",
+  "phase": "published",
+  "updated": "2026-11-27T10:20:00Z",
+  "owner_github": "ganya002",
+  "repository": "https://github.com/ganya002/filmer",
+  "language_ui": "nb-NO",
+  "next_step": "Only change this if Gabriel asks for a follow-up. Read HANDOFF.md before editing. Run python3 -m unittest discover -s tests. Do not swap the stack.",
+  "done": [
+    "Stdlib Python server on 127.0.0.1:47631",
+    "Drive scanner, movie/series grouping, Norwegian UI",
+    "VLC launch with resume (one hour stored, start-time minus 10 seconds)",
+    "Categories, search, filters, sort, context menu",
+    "Recycle bin with a confirm step and path safety checks",
+    "Posters from Wikidata/Wikipedia/TVMaze, optional TMDB",
+    "Desktop shortcut installer for Windows 10",
+    "App icon",
+    "Unit tests",
+    "Published to https://github.com/ganya002/filmer"
+  ],
+  "not_done": []
+}
